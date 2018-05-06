@@ -1,18 +1,18 @@
-- Five simple data types(also calle *primitive types*)
-  5种简单数据类型（基本数据类型）
-  1. Undefined
-  2. Null
-  3. Boolean
-  4. Number
-  5. String
+# 5种简单数据类型（基本数据类型）
+  Five simple data types(also calle *primitive types*)
+  - Undefined
+  - Null
+  - Boolean
+  - Number
+  - String
 &nbsp;
-- One complex data type
-  1种复杂数据类型
+# 1种复杂数据类型
+  One complex data type
   - Object
 &nbsp;
-- 对一个值使用 **typeof** 操作符将会返回以下某个字符串：
+# 对一个值使用 **typeof** 操作符将会返回以下某个字符串：
  "undefined" / "string" / "number" / "object" / "function"
-  Usage/示例：
+ - Usage/示例：
   ```javascript
     var message = "welcome";
     alert(typeof message);    //"string"
@@ -20,22 +20,22 @@
     alert(typeof 100);        //"number"
 
   ```
-- 在使用 *var* 声明变量但未初始化时，变量值为undefined
+# 在使用 *var* 声明变量但未初始化时，变量值为undefined
 
-- null值表示一个空对象**指针** （`typeof null == object`）
+# null值表示一个空对象**指针** （`typeof null == object`）
 
-- 任何数值除以非数值会返回*NaN*，*NaN* 与任何值不相等，包括它自身。
+# 任何数值除以非数值会返回*NaN*，*NaN* 与任何值不相等，包括它自身。
 
-- 数值的转换（非数值转化为数值）：
-    - `Number（）`：
-    ```javascript
+# 数值的转换（非数值转化为数值）：
+  - Number():
+  ```javascript
     var num1 = Number("Hello World");   //NaN
     var num2 = Number("");              //0
     var num3 = Number("66666");         //66666
     var num4 = Number(true);            //1
-    ```
-    - `parseInt()`:
-    ```javascript
+  ```
+  - parseInt():
+  ```javascript
     var num1 = parseInt("1234Hi");      //1234
     var num2 = parseInt("");            //NaN
     var num3 = parseInt("0xA");         //10 (十六进制)
@@ -45,10 +45,9 @@
     var num2 = parseInt("0xf");         //15 (十六进制)
     var num2 = parseInt("AF",16);       //175 十六进制
     var num2 = parseInt("AF");          //NaN
-    ```
-    - `parseFloat()`:
-
-    ```javascript
+  ```
+  - parseFloat():
+  ```javascript
     var num1 = parseFloat("1234Hi");      //1234
     var num2 = parseFloat("0xA");         //0
     var num3 = parseFloat("66.0");        //66
@@ -56,11 +55,11 @@
     var num5 = parseFloat("66.6.6");      //66.6
     var num6 = parseFloat("0606.6");      //606.6
     var num7 = parseFloat("3.124e5");     //312400
-    ```
-- String类型（值转换为字符串）
-    - `toString()`方法
+  ```
+# String类型（值转换为字符串）
+   - toString()方法
     *null* 和 *undefined* 没有这个方法
-    ```javascript
+   ```javascript
     var age = 11;
     alert(age.toString());      //"11" 字符串
 
@@ -72,18 +71,18 @@
     alert(num.toString(2));     //"1010"
     alert(num.toString(8));     //"12"
     alert(num.toString(16));    //"a"
-    ```
-    -  `String()`方法
+   ```
+  - String()方法
         - 适用于不知道要转换的值是否为*null*或*undefined*的情境
         - 如果值有`toString()`方法，则调用（无参）方法并返回结果
         - 如果值为*null*，则返回 "null"
         - 如果值为*undefined*，则返回 "undefined"
 &nbsp;
-- Object类型：对象是一组“数据”和“功能”的组合
+# Object类型：对象是一组“数据”和“功能”的组合
    - 创建自定义对象:
-    ``` javascript
+   ``` javascript
     var o = new Object();
-    ```
+   ```
    - Oject的每个实例都有下列属性和方法：
         - `constructor:  Object()` 保存着用于创建当前对象的函数
         - `hasOwnProperty(propertyName)` 用于检查给定的属性在当前对象实例中（非其原型中）是否存在
